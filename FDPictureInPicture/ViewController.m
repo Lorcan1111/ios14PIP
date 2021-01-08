@@ -6,21 +6,15 @@
 //
 
 #import "ViewController.h"
-#import <AVKit/AVKit.h>
-#import "ZFPlayer.h"
-#import "ZFAVPlayerManager.h"
-#import "ZFPlayerControlView.h"
 ViewController *vc = nil;
-
 @interface ViewController ()<AVPictureInPictureControllerDelegate>
 
 @property (nonatomic, strong) ZFPlayerController *player;
 @property (nonatomic, strong) ZFPlayerControlView *controlView;
-@property (nonatomic, strong) AVPictureInPictureController *pipController;
 @property (nonatomic, strong) NSString *playUrlString, *coverUrlString;
 @property (nonatomic, strong) UIButton *pipBtn;   ///< 画中画按钮
 @property (nonatomic, strong) UINavigationController *navi;
-
+@property (nonatomic, assign) BOOL pipDidRestore;
 @end
 
 @implementation ViewController
@@ -72,15 +66,19 @@ ViewController *vc = nil;
 // 已经关闭画中画
 - (void)pictureInPictureControllerDidStopPictureInPicture:(AVPictureInPictureController *)pictureInPictureController {
     // 处理 pipBtn 的选中状态、当前控制器置空
+    if (!self.pipDidRestore) {
+        //do close action
+    }
     vc = nil;
 }
 
 // 点击视频悬浮窗的复原按钮打开控制器
 - (void)pictureInPictureController:(AVPictureInPictureController *)pictureInPictureController restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:(void (^)(BOOL))completionHandler {
     // 处理控制器的跳转等
+    self.pipDidRestore = YES;
     if (![vc.navi.viewControllers containsObject:self]) {
         [vc.navi pushViewController:vc animated:YES];
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.15 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             completionHandler(YES);
         });
         return;
@@ -96,6 +94,7 @@ ViewController *vc = nil;
         } else {
             ZFAVPlayerManager *playerManager = (ZFAVPlayerManager *)self.player.currentPlayerManager;
             self.pipController = [[AVPictureInPictureController alloc] initWithPlayerLayer:playerManager.playerLayer];
+            self.pipController.requiresLinearPlayback = NO;
             self.pipController.delegate = self;
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self.pipController startPictureInPicture];

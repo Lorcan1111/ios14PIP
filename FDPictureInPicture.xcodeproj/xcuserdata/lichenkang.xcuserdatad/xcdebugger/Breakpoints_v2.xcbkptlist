@@ -14,8 +14,8 @@
             filePath = "FDPictureInPicture/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "-pictureInPictureControllerWillStartPictureInPicture:"
             landmarkType = "7">
          </BreakpointContent>
@@ -30,8 +30,8 @@
             filePath = "FDPictureInPicture/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "82"
-            endingLineNumber = "82"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "-pictureInPictureController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:"
             landmarkType = "7">
          </BreakpointContent>
@@ -39,16 +39,128 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "85AE48C5-7CD9-4CEF-886C-CADE8CEDCAA6"
+            uuid = "05FA883C-174C-42DE-A191-3E3A3400B24D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FDPictureInPicture/ViewController.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "-clickPipBtn:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "12FEBAAA-E4DD-4D93-8361-33AD35DBAC25"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FDPictureInPicture/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-pictureInPictureController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "12FEBAAA-E4DD-4D93-8361-33AD35DBAC25 - 7fa2d844a9379be0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ViewController pictureInPictureController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:]"
+                  moduleName = "FDPictureInPicture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lichenkang/Downloads/FDPictureInPicture-main/FDPictureInPicture/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "12FEBAAA-E4DD-4D93-8361-33AD35DBAC25 - 44a96f531a062216"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__110-[ViewController pictureInPictureController:restoreUserInterfaceForPictureInPictureStopWithCompletionHandler:]_block_invoke"
+                  moduleName = "FDPictureInPicture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/lichenkang/Downloads/FDPictureInPicture-main/FDPictureInPicture/ViewController.m"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "20">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F658925F-F880-4E38-A80E-B5CB3930EC2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FDPictureInPicture/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "-pictureInPictureControllerDidStopPictureInPicture:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46FE8370-CBC2-47B3-98ED-1E0F180ADEBD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FDPictureInPicture/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "-pictureInPictureControllerDidStopPictureInPicture:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "914FB69D-3167-4118-83E3-63D97F1E3D30"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FDPictureInPicture/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "-pictureInPictureControllerWillStopPictureInPicture:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EBF15FD9-49FA-46A5-A853-D67295885FFF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FDPictureInPicture/ViewController.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-pictureInPictureControllerWillStartPictureInPicture:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

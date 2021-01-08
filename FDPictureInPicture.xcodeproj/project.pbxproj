@@ -40,6 +40,7 @@
 		54C295942536DCFB00036A47 /* ZFPortraitControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C295792536DCFA00036A47 /* ZFPortraitControlView.m */; };
 		54C295952536DCFB00036A47 /* UIImageView+ZFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C2957A2536DCFA00036A47 /* UIImageView+ZFCache.m */; };
 		9407780625A418B400EF16E7 /* EnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9407780525A418B400EF16E7 /* EnterViewController.m */; };
+		94F813A825A5EA3000BFE093 /* myPIPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F813A725A5EA3000BFE093 /* myPIPViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +129,8 @@
 		54C2957C2536DCFA00036A47 /* ZFLandScapeControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFLandScapeControlView.h; sourceTree = "<group>"; };
 		9407780425A418B400EF16E7 /* EnterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterViewController.h; sourceTree = "<group>"; };
 		9407780525A418B400EF16E7 /* EnterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterViewController.m; sourceTree = "<group>"; };
+		94F813A625A5EA3000BFE093 /* myPIPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = myPIPViewController.h; sourceTree = "<group>"; };
+		94F813A725A5EA3000BFE093 /* myPIPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = myPIPViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +192,8 @@
 				54324110253037A400601069 /* main.m */,
 				9407780425A418B400EF16E7 /* EnterViewController.h */,
 				9407780525A418B400EF16E7 /* EnterViewController.m */,
+				94F813A625A5EA3000BFE093 /* myPIPViewController.h */,
+				94F813A725A5EA3000BFE093 /* myPIPViewController.m */,
 			);
 			path = FDPictureInPicture;
 			sourceTree = "<group>";
@@ -440,6 +445,7 @@
 				54C295872536DCFB00036A47 /* UIViewController+ZFPlayerRotation.m in Sources */,
 				54C295802536DCFB00036A47 /* ZFPlayerLogManager.m in Sources */,
 				54C295822536DCFB00036A47 /* ZFPlayerNotification.m in Sources */,
+				94F813A825A5EA3000BFE093 /* myPIPViewController.m in Sources */,
 				54C2958C2536DCFB00036A47 /* ZFLandScapeControlView.m in Sources */,
 				54C295882536DCFB00036A47 /* ZFAVPlayerManager.m in Sources */,
 				54C295832536DCFB00036A47 /* ZFFloatView.m in Sources */,
@@ -625,6 +631,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UVSP2PCM2;
 				INFOPLIST_FILE = FDPictureInPicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,6 +652,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3UVSP2PCM2;
 				INFOPLIST_FILE = FDPictureInPicture/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

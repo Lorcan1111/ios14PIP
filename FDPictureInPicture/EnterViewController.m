@@ -35,28 +35,39 @@
     [self.view addSubview:label];
     UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(250, 300, 100, 50)];
     btn.backgroundColor = [UIColor yellowColor];
-    [btn setTitle:@"我是按钮" forState:UIControlStateNormal];
+    [btn setTitle:@"进入播放页" forState:UIControlStateNormal];
     [btn setTitleColor:[UIColor systemPinkColor] forState:UIControlStateNormal];
     btn.titleLabel.textColor = [UIColor blueColor];
     [btn addTarget:self action:@selector(btnClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    UIButton *closeBtn = [[UIButton alloc] initWithFrame:CGRectMake(250, 365, 100, 50)];
+    closeBtn.backgroundColor = [UIColor yellowColor];
+    [closeBtn setTitle:@"关闭画中画" forState:UIControlStateNormal];
+    [closeBtn setTitleColor:[UIColor systemPinkColor] forState:UIControlStateNormal];
+    closeBtn.titleLabel.textColor = [UIColor blueColor];
+    [closeBtn addTarget:self action:@selector(closeBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:closeBtn];
 }
 
 
 - (void)btnClicked:(id)sender {
-    ViewController *vc = [ViewController new];
-    vc.modalPresentationStyle = UIModalPresentationFullScreen;
-    [self.navigationController pushViewController:vc animated:YES];
+    if (vc) {
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self.navigationController pushViewController:vc animated:YES];
+    } else {
+        ViewController *vc = [ViewController new];
+        vc.modalPresentationStyle = UIModalPresentationFullScreen;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)closeBtnClicked:(id)sender {
+    if (vc) {
+        vc.pipController = nil;
+        [vc.pipController stopPictureInPicture];
+    }
 }
-*/
+
 
 @end
